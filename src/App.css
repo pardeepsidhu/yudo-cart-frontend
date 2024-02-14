@@ -1,0 +1,1269 @@
+.App {
+  text-align: center;
+}
+:root{
+  --bCol:gray;
+  --tCol:red;
+}
+*{
+  font-family: ubuntu;
+  font-weight: bold;
+  color:var(--bCol);
+  text-shadow: o.5px 0.5px 1px black,-0.5px -0.5px 1px black;
+}
+.itemBox{
+width: 100%;
+/*  height: 100000px;*/
+background: var(--bCol);
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+.item{
+
+width: 360px;
+height: 340px;
+/* border: 2px solid rgb(234, 0, 255); */
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: center;
+margin-top: 5px;
+}
+.imageBox{
+border: 2px solid black;
+height: 200px;
+width: 360px;
+overflow: hidden;
+}
+
+.propertyBox{
+border: 2px solid black;
+height: 38px;
+width: 356px;
+margin-left: 0.5px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: inset 1px 1px 1px gray , inset 1px 1px 1px white;
+}
+h2{
+  text-shadow: 2px 2px 5px black , -2px -2px 5px black;
+}
+.buyBox{
+border: 2px solid black;
+height: 58px;
+width: 356px;
+margin-left: 0.5px;
+display: flex;
+justify-content: space-evenly; 
+align-items: center;
+box-shadow:inset 5px 5px 5px gray  ;
+}
+.cartButton{
+width: 49%;
+height: 90%;
+box-shadow:inset 2px 2px 2px gray , -1px -1px 1px white;
+text-shadow: 1px 1px 2px black,-1px -1px 2px black;
+}
+.purchaseButton{
+width: 49%;
+height: 90%;
+box-shadow:inset 2px 2px 2px gray , -1px -1px 1px white;
+text-shadow: 1px 1px 2px black,-1px -1px 2px black;
+}
+#profilePhoto{
+  width:"100%";
+  height:"100%";
+  border-radius: 55px;
+
+}
+#profileLink{
+width: 35%;
+height: 35%;
+display: inline-block;
+
+}
+.itemImage:hover{
+transform: scale(1.1);
+
+}
+.cartButton:hover{
+box-shadow: 2px 2px 5px black;
+background-color: wheat;
+/* color: black; */
+}
+.purchaseButton:hover{
+box-shadow: 2px 2px 5px black;
+background-color: wheat;
+/* color: black; */
+}
+.floatingCartBox{
+height: 75px;
+width: 75px;
+/* border: 2px solid black; */
+position: fixed;
+bottom: 10%;
+right: 10%;
+border-radius: 15px;
+overflow: hidden;
+box-shadow:inset 5px 5px 5px gray , -2px -2px 5px white;
+box-shadow: inset 5px 5px 5px gray , inset -2px -2px 5px white;
+  backdrop-filter: blur(1px);
+  color: black;
+}
+.floatingCartBox svg{
+position: relative;
+left: 9px;
+
+}
+.floatingCartButton:hover{ 
+background-color: gray;
+
+}
+.nextPreviousPage{
+height: 50px;
+
+display: flex;
+justify-content: space-evenly;
+}
+.nextPageButton{
+width: 180px;
+
+
+}
+.previousPageButton{
+width: 180px;
+}
+.shopNameBox{
+border:2px solid black;
+display:flex;
+justify-content:center;
+align-items:center;
+height:40px;
+margin-top:0px;
+
+} 
+body{
+  background: var(--bCol);
+ 
+}
+.profileMainBox{
+ border: 4px solid black; 
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-top:0px;
+   box-shadow: 4px 4px 2px black, inset 4px 4px 2px black;
+   padding: 10px;
+}
+.profileNameBox{
+   width: 175px;
+   height: 175px;
+ /*  border: 2px solid rgb(234, 0, 255); */
+  display:flex;
+  justify-content:center;
+/* align-items:center; */
+  flex-direction:column;
+
+}
+.fullProfilePhotoBox{
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border-radius:180px; 
+  overflow:hidden; 
+ 
+}
+.profileDetailsBox{
+/* width:352px; */
+/* height:175px; */
+/* border:2px solid rgb(234, 0, 255); */
+display:flex;
+  justify-content:center;
+/* align-items:center; */
+  flex-direction:column;
+}
+.editProfile{
+  height:50px;
+  border: 2px solid transparent;
+  width:165px;
+  position:relative;
+bottom:48px;
+   background-color: transparent;
+  font-size: 18%;
+ 
+}
+.PreviousOrderHaddingBox{
+  border: 5px solid rgb(234, 0, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 5px;
+}
+
+
+  *{
+    font-family: ubuntu;
+    font-weight: bold;
+  }
+.prevousBox{
+width: 100%;
+/*  height: 100000px;*/
+background: var(--bCol);
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+.item{
+
+width: 360px;
+height: 340px;
+/* border: 2px solid rgb(234, 0, 255); */
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: center;
+margin-top: 5px;
+}
+.imageBox{
+border: 2px solid black;
+height: 200px;
+width: 360px;
+overflow: hidden;
+}
+.propertyBox{
+border: 2px solid black;
+height: 38px;
+width: 356px;
+margin-left: 0.5px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: inset 1px 1px 1px gray , inset 1px 1px 1px white;
+}
+.buyBox{
+border: 2px solid black;
+height: 58px;
+width: 356px;
+margin-left: 0.5px;
+display: flex;
+justify-content: space-evenly; 
+align-items: center;
+}
+.cartButton{
+width: 49%;
+height: 90%;
+border:1px soid gray;
+background: var(--bCol);
+display:flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+}
+.purchaseButton{
+  width: 49%;
+  height: 90%;
+  border:1px soid gray;
+  background: var(--bCol);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration:none;
+}
+#profilePhoto{
+width: 40px;
+height: 40px;
+}
+#profileLink{
+ width: 35%;
+height: 35%;
+display: inline-block;
+
+}
+.itemImage:hover{
+transform: scale(1.1);
+
+}
+.cartButton:hover{
+box-shadow: 2px 2px 5px black;
+background-color: wheat;
+}
+.purchaseButton:hover{
+box-shadow: 2px 2px 5px black;
+background-color: gray;
+}
+
+
+.nextPreviousPage{
+height: 50px;
+
+display: flex;
+justify-content: space-evenly;
+}
+.nextPageButton{
+width: 180px;
+
+
+}
+.previousPageButton{
+width: 180px;
+}
+.previousStatusBox{
+  border:2px solid black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:40px;
+  margin-top:0px;
+} 
+.profilePhotoFull{
+  width: 105%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  right: 4px;
+}
+.itemImage{
+  width:"360px";
+   height:"200px";
+}
+.NotoficationsHeddingBox{
+  border: 5px solid rgb(234, 0, 255);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*				margin-bottom: 5px;*/
+}
+.notifications{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 2px solid black;
+/*				margin-bottom: 1px;				*/
+}
+#profilePhoto{
+width: 40px;
+height: 40px;
+}
+#profileLink{
+width: 35%;
+height: 35%;
+display: inline-block;
+
+}
+
+/* cart css */
+
+.itemBox{
+  width: 100%;
+/*  height: 100000px;*/
+  background: var(--bCol);
+  display: flex;
+  flex-wrap: wrap;
+justify-content: space-evenly;
+}
+.item{
+
+  width: 360px;
+  height: 340px;
+  border: 2px solid var(--bCol); 
+ box-shadow: 2px 2px 5px black ,  -2px -2px 5px black;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ align-items: center;
+margin-top: 5px;
+}
+.imageBox{
+  border: 2px solid black;
+  height: 200px;
+  width: 360px;
+  overflow: hidden;
+}
+.propertyBox{
+  border: 2px solid black;
+  height: 38px;
+  width: 356px;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 1px 1px 1px gray , inset 1px 1px 1px white;
+}
+.buyBox{
+  border: 2px solid black;
+  height: 58px;
+  width: 356px;
+  margin-left: 0px;
+  display: flex;
+justify-content: space-evenly; 
+ align-items: center;
+}
+.removeCartButton{
+  width: 49%;
+  height: 90%;
+}
+.purchaseButton{
+   width: 49%;
+  height: 90%;
+}
+#profilePhoto{
+  width: 40px;
+  height: 40px;
+}
+#profileLink{
+   width: 35%;
+  height: 35%;
+  display: inline-block;
+ 
+}
+.itemImage:hover{
+  transform: scale(1.1);
+
+}
+.removeCartButton:hover{
+  box-shadow: 2px 2px 5px black;
+  background-color: wheat;
+}
+.purchaseButton:hover{
+  box-shadow: 2px 2px 5px black;
+  background-color: wheat;
+}
+
+.removeAllPurchaseAll{
+  height: 50px;
+  display: flex;
+ justify-content: space-evenly;
+  flex-wrap:wrap;
+   background: var(--bCol); 
+  
+}
+.purchaseAll{
+  width: 175px;
+  height:42px;
+}
+.removeAll{
+  width: 175px;
+  height:42px;
+}
+.purchaseAll:hover{
+  box-shadow: 2px 2px 5px black;
+  background-color: wheat;
+
+}
+  .removeAll:hover{
+    box-shadow: 2px 2px 5px black;
+    background-color: wheat;
+  }
+  .totalBox{
+    border:2px solid black;
+    width:356px;
+    height:46px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .totalOuterBox{
+    
+    border: 2px solid var(--bCol);
+    width:360px;
+    height:50px;
+    margin-top: 1px;
+    box-shadow: 2px 2px 5px black , -2px -2px 5px black;
+  }
+  .removeAllPurchaseAllInnerBox{
+    display:flex;
+    width:356px;
+    justify-content:space-evenly;
+   border:2px solid black; 
+   
+    flex-wrap:wrap;
+   
+  }
+  .removeAllPurchaseAllOuterBox{
+    margin-top: 1px;
+    border: 2px solid var(--bCol);
+    box-shadow: 2px 2px 4px var(--bCol);
+    width:360px;
+    height: 50px;
+    box-shadow: 2px 2px 2px black , -2px -2px 2px black;
+  }
+  .shopNameBox{
+    border:2px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:40px;
+    margin-top:0px;
+    box-shadow: inset 1px 1px 1px gray , inset 1px 1px 1px white;
+  }     #mainRegisterBox{
+    border:2px solid blue;
+    height: 700px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+}
+#registerInnerBox{
+   border:2px solid blue;
+    height: 700px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: aqua;
+}
+hr{
+    width: 360px;
+}
+#nameBoxRegister{
+    height: 40px;
+    width: 82%;
+    border: 0px solid black; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#registerName{
+    width: 248px;
+    height: 40px;
+    border: 2px solid rgb(0, 255, 42); ;
+    font-size: 20px;
+    font-family: ubuntu;
+    padding-left: 50px;
+}
+#registerLastName{
+    width: 248px;
+    height: 40px;
+    border: 2px solid rgb(0, 255, 42); ;
+    font-size: 20px;
+    font-family: ubuntu;
+    padding-left: 50px;
+}
+.inputRegister{
+    width: 80%;
+    height: 40px;
+    border: 2px solid rgb(0, 255, 42); ;
+    font-size: 20px;
+    font-family: ubuntu;
+    padding-left: 20px;
+}
+#registerHeading{
+    width: 80%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+ margin-bottom: 30px;
+
+}
+#haveAccountBox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+#submitResetBox{
+    height: 90px;
+    width: 82%;
+    border: 0px solid rgb(0, 255, 42); ; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.submitResetBtn{
+    width: 284px;
+    height: 40px;
+    border: 2px solid rgb(0, 255, 42); ;
+    font-size: 20px;
+    font-family: ubuntu;
+}
+legend{
+   
+    margin: auto;
+}
+#formOuterBox{
+    border: 0px solid black;
+    background-color: var(--bCol);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+}
+fieldset{
+  border: 2px solid red;
+}
+
+/* product stylesheet */
+#productBox{
+  width:100%;
+ 
+  /* border:2px solid blue; */
+  display:flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+#productPhotoBox{
+  width: 360px;
+  height: 259px;
+  border:2px solid blue;
+  border: 2px solid var(--bCol);
+  box-shadow: 2px 2px 5px black , -2px -2px 5px black;
+
+}
+#productDetailsBox{
+  height: 258px;
+  width: 360px;
+  /* border:2px solid blue; */
+   display:flex;
+   flex-direction:column;
+}
+#productDescripitionAndReviewBox{
+  /* border:2px solid blue; */
+ 
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+}
+
+#productReviewBox{
+  border:2px solid black;
+  width:350px;
+  height:360px;
+ display:flex;
+flex-direction:column;
+
+
+}
+.productPhotoInnerBox{
+  width:356px;
+  height:196px;
+  border:2px solid black;
+}
+
+#disBox{
+  width:350px;
+  height:325px;
+/*  overflow-y:scroll;*/
+}
+#productReviewBox{
+display:flex;
+flex-direction: column;
+
+border: 0px solid blue;
+align-items: center;
+}
+#reviewInnerBox{
+ width: 100%;
+ height:350px;
+ /* border:2px solid blue;  */
+ overflow-y: scroll;
+ overflow-x: hidden;
+}
+.hedBlack{
+  color:var(--bCol)
+  
+}
+#productDetailsInnerBox{
+  height:350px ;
+}
+
+/* review stylesheet */
+#review{
+  width: 350px;
+  /* border:2px solid black; */
+  display: flex;
+/*  overflow: scroll;*/
+  align-items: center;
+  margin-left: 5px;
+}
+#reviewImageBox{
+  width: 40PX;
+  height:40px;
+  border-radius:20px;
+  /* border:2px solid black; */
+  box-shadow: inset 3px 3px 5px gray ,inset -3px -3px 5px white;
+  overflow: hidden;
+  margin-right: 10px;
+  padding: auto;
+}
+.writtenReview{
+  width: 300px;
+  /* height: 40px; */
+  /* border: 2px solid black; */
+/* background-color: aqua; */
+margin-left: 40px;
+display: flex;
+}
+h6{
+  color:var(--bCol);
+  text-shadow:1px 1px 2px black ,-1px -1px 2px black;
+}
+#reviewPhoto{
+  height: 40px;
+  width: 40px;
+  position: relative;
+    right: 8px;
+    bottom: 2px;
+}
+#stars{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.u{
+  margin-bottom: 10px;
+}
+#addReviewButton{
+  width: 20px;
+  height: 20px;
+  display:fixed;
+  bottom:60px;
+  right:60px;
+}
+#rateBox{
+  width: 350px;
+  display:flex;
+ 
+}
+#addReviewStarsBox{
+  display: flex;
+  width: 150px;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  margin-left:15px;
+}
+#reviewArea{
+  display: none;
+  width:340px;
+  height: 260px;
+}
+#rateMainBox{
+  /* border:2px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 354px;
+  align-items: center;
+  justify-content:center;
+}
+#sendLogo{
+  position: relative;
+  bottom: 22px;
+  left: 150Px;
+  display:none;
+}
+
+
+
+/* register */
+
+#mainRegisterBox{
+  border:0px solid black;
+  height: 700px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background-color: rgba(0,255,255,0.100); */
+  backdrop-filter:blue(20px);
+  box-shadow: inset 5px 5px 2px black,2px 2px 5px BLACK;
+border-radius:50px;
+
+}
+hr{
+  width: 360px;
+}
+#nameBoxRegister{
+  height: 40px;
+  width: 82%;
+  border: 0px solid black; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#registerName{
+  width: 248px;
+  height: 40px;
+  border: 0px solid black;
+  font-size: 20px;
+  font-family: ubuntu;
+  box-shadow: inset 2px 2px 1px black,2px 2px 10px black;
+background:var(--bCol);
+border-radius:20px;
+color:var(--bCol);
+text-shadow:0.5px 0.5px 1px black , -0.5px -0.5px 1px black;
+}
+#registerLastName{
+  width: 248px;
+  height: 40px;
+  border: 0px solid black;
+  font-size: 20px;
+  font-family: ubuntu;
+  box-shadow: inset 2px 2px 1px black,2px 2px 10px black;
+background:var(--bCol);
+border-radius:20px;
+color:var(--bCol);
+text-shadow:0.5px 0.5px 1px black , -0.5px -0.5px 1px black;
+}
+.inputRegister{
+  box-shadow: inset 2px 2px 1px black,2px 2px 10px black;
+display:flex;
+align-items:center;
+justify-content:center;
+  width: 80%;
+  height: 40px;
+ border: 0px solid black;
+ background:var(--bCol);
+border-radius:20px;
+  font-size: 20px;
+  font-family: ubuntu;
+color:var(--bCol);
+text-shadow:0.5px 0.5px 1px black , -0.5px -0.5px 1px black;
+}
+#registerHeading{
+  width: 80%;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+margin-bottom: 30px;
+color:var(--bCol);
+}
+#haveAccountBox{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+#submitResetBox{
+ 
+  height: 90px;
+  width: 82%;
+  border: 0px solid black; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.submitResetBtn{
+  width: 284px;
+  height: 40px;
+  border: 0px solid black;
+background:var(--bCol) ;
+border-radius:20px;
+  font-size: 20px;
+  font-family: ubuntu;
+  box-shadow: inset 10px 10px 20px gray,-1px -1px 20px white;
+color:var(--bCol);
+font-size:25px;
+text-shadow:1px 1px 5px black , -1px -1px 5px black;
+}
+
+.navBar{
+  width:86%;
+  margin-top:5px;
+  /* height: 50px; */
+  border-radius: 10px;
+  /* background-color: var(--bCol); */
+  box-shadow: inset 5px 5px 5px gray , inset -5px -5px 5px white;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5px;
+  flex-wrap:wrap;
+position:fixed;
+top: 0px;
+right: 7%;
+left: 7%;
+
+}
+.navBtn{
+  width:345px;
+  height:40px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  flex-wrap: wrap;
+}
+.btnBoxes{
+  /* background-color:var(--bCol); */
+  box-shadow: inset 2px 2px 2px gray, inset -2px -2px 2px white;
+  border-radius: 10px;
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.btnBoxes a{
+  text-decoration: none;
+}
+.search{
+  border-radius: 20px;
+  background: transparent;
+  text-shadow: 1px 1px 5px black , -1px -1px 5px black;
+}
+
+a,p{
+color:var(--bCol);
+text-shadow: 1px 1px 5px black , -1px -1px 5px black;
+}
+h1{
+  text-shadow: 5px 5px 5xp black, -5px -5px 5px black;
+}
+.theme{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  box-shadow: inset 3px 3px 5px gray ,inset -3px -3px 5px white;
+  text-shadow:1px 1px 5px black , -1px -1px 5px black;
+  background: transparent;
+}
+.theme p{
+  text-shadow: 1px 1px 4px black, -1px -1px 4px black;
+  position: relative;
+  top:2px;
+  cursor: pointer;
+}
+#colorSearch{
+  position: fixed;
+  display: none;
+  top:15%;
+  right: 20%;
+  z-index: 101;
+}
+span , li{
+  text-shadow: 1px 1px 4px black, -1px -1px 4px black;
+}
+#disBox p,#productDetailsInnerBox p{
+  margin-left: 5px;
+}
+
+.editProfileBtn{
+  width:350px;
+  height:50px;
+  color: red;
+  border-radius: 20px;
+}
+.purchaseAll,.removeAll{
+  text-shadow: .5px 0.5px 2px black , -0.5px -0.5px 2px black;
+  background-color: var(--bCol);
+}
+
+.recentBox{
+  height: 170px;
+  width: 100%;
+  border:2px solid var(--bCol);
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-direction: row;
+  overflow-x: scroll;
+  padding-left: 5px;
+}
+.recentOuterBox{
+  height: 150px;
+  width: 120px;
+  border:2px solid var(--bCol);
+  margin-left: 2px; 
+  margin-right: 2px;
+}
+.recentInnerBox{
+  height: 146px;
+  width: 116px;
+  border:2px solid var(--bCol);
+  box-shadow: 1px 1px 2px black,-1px -1px 2px black;
+  display: flex;
+  flex-direction: column;
+
+}
+.recentNameBox{
+  border:2px solid black;
+  width:112px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recentImageBox{
+  border:2px solid black;
+  width:112px;
+  height: 75px;
+}
+.colorsBtnBox{
+  width: 356px;
+  height: 38px;
+  display: flex;
+  border: 2px solid black;
+  overflow-x: scroll;
+  justify-content: center;
+}
+.colorsBtn{
+  height: 26px;
+  width: 72px;
+  border: 2px solid var(--bCol);
+  box-shadow: 2px 2px 1px black ,-2px -2px 1px black;
+  border-radius: 7px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.colorsBtn:hover{
+  background-color: wheat;
+  border: 2px solid wheat;
+  cursor: pointer;
+}
+
+
+.alert{
+  width:100%;
+  height: 100%;
+ 
+
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+
+}
+.alertBox{
+width: 250PX;
+  height: 126PX;
+  /* border:2px solid black; */
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 5px gray , inset -5px -5px 5px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+.emptyBox{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.emptyIn{
+  width: 400px;
+  height: 50px;
+}
+
+.filterBox{
+  width: 100%;
+  height: 50px;
+  /* border:2px solid red; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.filterBoxInnerBox{
+  height: 30px;
+  width: 90%;
+  /* border:2px solid red; */
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.filterBtn{
+  border-radius: 9px;
+  box-shadow: 1px 1px 1px black ,-1px -1px 1px black;
+  background: var(--bCol);
+  color: var(--bCol);
+  text-shadow: 1px 1px 2px black ,-1px -1px 2px black;
+}
+.filterBtn:hover{
+  background-color: wheat;
+}
+.filterContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top:60px;
+  z-index: 100;
+/* display: none; */
+}
+.filterContainerInner{
+  width: 350px;
+  height: 380px;
+  border-radius: 50px;
+  backdrop-filter: blur(10PX);
+  Box-shadow: 5px 5px 5px black,-2px -2px 5px white;
+}
+.filterHedingBox{
+  height: 50px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  text-shadow: 1px 1px 5px black,-1px -1px 5px black;
+}
+.filterPropBox{
+  width: 300px;
+  height: 282px;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: inset 5px 5px 2px black,3px 3px 2px white;
+  padding: 10px;
+}
+#sortCheck{
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background: transparent;
+}
+#priceFrom{
+  width: 81px;
+  height: 25px;
+  font-size:10px;
+  font-size: 21px;
+  border-radius: 6px;
+  background: transparent;
+  text-shadow: 1px 1px 3px black,-1px -1px 3px black;
+}
+#priceTo{
+  width: 81px;
+  height: 25px;
+  font-size: 21px;
+  border-radius: 6px;
+  background: transparent;
+  text-shadow: 1px 1px 3px black,-1px -1px 3px black;
+}
+#selectBrand{
+  font-size: 20px;
+  border-radius: 6px;
+  background: transparent;
+  text-shadow: 1px 1px 3px black,-1px -1px 3px black;
+}
+#Ram{
+  width: 118px;
+  height: 28px;
+  font-size: 20px;
+  border-radius: 6px;
+  background: transparent;
+  text-shadow: 1px 1px 3px black,-1px -1px 3px black;
+}
+#storage{
+  width: 118px;
+  height: 28px;
+  font-size: 20px;
+  border-radius: 6px;
+  background: transparent;
+  text-shadow: 1px 1px 3px black,-1px -1px 3px black;
+}
+#applyFilter{
+  width: 90px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px black , inset -1px -1px 2px black , inset 1px 1px 2px white;
+  border-radius: 10px;
+  position: relative;
+  right: 34px;
+  margin: auto;
+}
+strong{
+  font-size: 25px;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+}
+
+.invalidInfo{
+ height: 5px;
+}
+.invalidInfo span{
+  color:red;
+}
+.invalidInfo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-edit{
+  background-color: var(--bCol);
+  border-radius: 30px;
+  text-shadow: 1px 1px 5px black,-1px -1px 5px black;
+}
+input{
+  padding: auto;
+}
+.mainLoginBox{
+  height: 350px;
+}
+.addProduct {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.addProduct input {
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  margin:1px
+}
+.orderPropBox{
+  height: 96px;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 20px;
+}
+.cancleBtn{
+  width: 100%;
+  padding-top:8px;
+}
+
+
+/*private css*/
+
+.product-list{
+  text-align: center;
+  margin-top:50px;
+
+}
+.product-list ul li {
+  display: inline-block;
+  border:2px  solid black;
+  padding: 5px;
+  width: 103px;
+  height: 40px;
+  overflow: hidden;
+}
+.product-list ul{
+  margin-y: 10px;
+}
+
+.adminNavbar{
+  position: relative;
+  top:0px;
+  display: none;
+}
