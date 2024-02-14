@@ -30,11 +30,8 @@ export default function Item(props) {
   }
   
 useEffect(()=>{
-  if(one ===0){
   evalCartVal() 
-  setOne(1);
-}
-})
+},[])
 
   const addToCart= async(_id) =>{
     let user = localStorage.getItem('user');

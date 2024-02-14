@@ -45,7 +45,7 @@ const handleSubmit = async()=>{
 }
 useEffect(()=>{
   verify()
-})
+},[])
 
 
 

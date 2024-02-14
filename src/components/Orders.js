@@ -26,11 +26,8 @@ const hide =()=>{
   setDeleted(false)
 }
    useEffect(()=>{
-if(one ===0){
 getData()
-  setOne(1)
-}   
-   })
+   },[])
 
    const handleCancle =async(id,date)=>{
      let user = localStorage.getItem('user');
@@ -45,7 +42,6 @@ getData()
    })
     setDeleted(true)
    getData()
-
    }
 	return(
 		<>

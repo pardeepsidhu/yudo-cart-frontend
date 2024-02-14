@@ -39,8 +39,9 @@ const verify=async()=>{
 }
 
    useEffect(()=>{
+    verify()
     getProducts()
-   })
+   },[])
   return (
     <>
          <div className='product-list'>
