@@ -27,7 +27,7 @@ export default function Register() {
    if(result){
     navigate("/profile")
    }
-  },[])
+  })
   const handleSubmit=async ()=>{
     
     let isNumber = number[0]==='9' || number[0]==='8' || number[0]==='7' || number[0]==='6' 

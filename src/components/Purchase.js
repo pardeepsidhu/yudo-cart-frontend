@@ -43,11 +43,15 @@ navigate("/signup")
 }
     }
 useEffect(()=>{
-    getUser()
+    if(one ===0){
+         getUser()
     getProduct()
-},[])
+    setOne(1)
+    }
+})
 
 const handlePurchase = async()=>{
+
 let user = localStorage.getItem('user');
 user =JSON.parse(user)
 let isNumber2 = number2[0]==='9' || number2[0]==='8' || number2[0]==='7' || number2[0]==='6' 
@@ -61,6 +65,7 @@ if(isNumber2 && number2.length>9 && address2.length>11){
         user:user.user
     }
 })
+console.log(result)
 if(result){
   setPurcahsed(true) 
 }
@@ -85,6 +90,7 @@ setNumberErr("none")
      setAddressErr("none")
    }
 }
+
 
 }
   return (

@@ -41,8 +41,6 @@ const addToRecent = async()=>{
           }
         })
         result = await result.json();
-        getData()
-        getReview()
       } }
      }
      
@@ -58,13 +56,15 @@ const addToRecent = async()=>{
         }
       })
     }
+
     setReviews(result);
    }
    useEffect(()=>{
    	getData()
     getReview()
 addToRecent()
-   },[])
+    
+   })
  const [reviewEnable,setReviewEnable]=useState(0)
 
   const addReview =() => {

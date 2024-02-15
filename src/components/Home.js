@@ -101,8 +101,12 @@ const demonSeartch=(keys)=>{
     setOne(1)
      getData()
     }
+    
+     
+    
     getRecents();
-  },[])
+   
+  })
 
 const handleFilterBtn =()=>{
 document.getElementById("filters").style.display="flex"

@@ -30,7 +30,7 @@ useEffect(()=>{
       <button id='reviewImageBox'> 
       <img id='reviewPhoto'src={demoProfile} />
       </button> 
-       <h6 className='hedBlack' style={{"text-shadow":"1px 1px 4px black, -1px -1px 4px black"}}> {props.from.split("@")[0]}</h6> 
+       <h6 className='hedBlack' style={{"text-shadow":"1px 1px 4px black, -1px -1px 4px black"}}> {props.from}</h6> 
        <div id='stars' >
         <img src={starFill} alt="no" /> <img  src={star2} alt="no" /> <img src={star3}  alt="no" />  <img src={star4}  alt="no" />   <img src={star5}  alt="no" /> 
            </div>

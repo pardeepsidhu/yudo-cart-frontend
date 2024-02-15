@@ -29,7 +29,6 @@ export default function About() {
       <div className="accordion-body" > 
        This Is A E-Commerce Website Designed Only For Educational And Learning Purpose ... <br/>
        Used Techonologies : <br/>
-       Name : Yudo-Cart <br/>
        Markup : HTML/JSX<br/>
        Language : JavaScript <br/>
        Style : CSS And Bootstraps <br/>

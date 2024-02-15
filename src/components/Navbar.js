@@ -12,8 +12,32 @@ import {
 export default function Navbar(props) {
  
 const [search,setSearch]=useState("");
+// const getColor =()=>{
+//   let color =localStorage.getItem('color')
+//   if(color){
+//     color = JSON.parse(color)
+//      var r = document.querySelector(':root');
+//   r.style.setProperty('--bCol',color);
+//   }
+// }
 
 
+function changeColor(){
+  let color = document.getElementById("colorSearch").value;
+  var r = document.querySelector(':root');
+  r.style.setProperty('--bCol', color);
+}
+ function handleColorBtn(){
+ let btn = document.getElementById("theme").innerHTML;
+  if(btn==="Color"){
+  document.getElementById("theme").innerHTML="hide";
+  document.getElementById("colorSearch").style.display="block";
+ }
+ else{
+  document.getElementById("theme").innerHTML="Color";
+  document.getElementById("colorSearch").style.display="none";
+ }
+}
 const [pText,SetPText]=useState("");
 useEffect(()=>{
   let login = localStorage.getItem("user");

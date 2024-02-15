@@ -34,7 +34,7 @@ const getData =async()=>{
 }
    useEffect(()=>{
     getData()
-   },[])
+   })
 
  
   return (
@@ -46,7 +46,7 @@ const getData =async()=>{
 { 
 waiting ? <><ItemStructure /> <ItemStructure /> <ItemStructure /> <ItemStructure /> <ItemStructure /> <ItemStructure /> </>  :
   cartObj.length > 0 ?  cartObj.map((Element) => {
-  return <Item price={Element.price}  name={Element.company+" "+Element.name} _id={Element._id} img={Element.img} />
+  return <Item price={Element.price} name={Element.company+" "+Element.name} _id={Element._id} img={Element.img} />
 }) : <h1>EMPTY CART</h1> }
     </div>
 

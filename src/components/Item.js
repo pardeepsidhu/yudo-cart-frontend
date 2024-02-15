@@ -30,8 +30,11 @@ export default function Item(props) {
   }
   
 useEffect(()=>{
+  if(one ===0){
   evalCartVal() 
-},[])
+  setOne(1);
+}
+})
 
   const addToCart= async(_id) =>{
     let user = localStorage.getItem('user');
@@ -71,7 +74,7 @@ useEffect(()=>{
    </div>
    <div className="shopNameBox"><h2>&#8377; {props.price}</h2></div>
    <div className="buyBox">
-    <a className="cartButton buttonsXp" onClick={()=>addToCart(props._id)} >{cartVal}<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" className="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+    <a className="cartButton buttonsXp" onClick={()=>addToCart(props._id) } >{cartVal}<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" className="bi bi-cart-plus-fill" viewBox="0 0 16 16">
   <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
 </svg> </a>
      <a className="purchaseButton buttonsXp" href={"/purchase/"+props._id} >Purchase <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" className="bi bi-cash-coin" viewBox="0 0 16 16">

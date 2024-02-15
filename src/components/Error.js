@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 export default function Error() {
 
@@ -11,10 +11,7 @@ export default function Error() {
   window.location.pathname="/"
  }
  }
- useEffect(()=>{
-  setInterval(decrement,1000)
- },[second])
- 
+ setInterval(decrement,1000)
   return (
     <div className='container'>
     <center>

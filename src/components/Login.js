@@ -6,7 +6,12 @@ export default function Login() {
   const [password,setPassword]=useState("");
   const [err,setErr]=useState(false);
 
-
+useEffect(()=>{
+  let result = localStorage.getItem("user");
+  if(result){
+    navigate("/")
+  }
+})
 
 const navigate =useNavigate();
   const handleLogin=async()=>{
@@ -27,12 +32,6 @@ const navigate =useNavigate();
   navigate("/")
    }
   }
-  useEffect(()=>{
-    let result = localStorage.getItem("user");
-    if(result){
-      navigate("/")
-    }
-  },[])
   return (
     <>
     
